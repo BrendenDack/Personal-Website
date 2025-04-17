@@ -11,7 +11,7 @@
     justify-content: center;
     
     /* For Columns */
-    align-items: space-evenly;
+    align-items: center;
 
     /* Allows items to wrap to next line, no shrink */
     flex-wrap: wrap;
@@ -27,12 +27,18 @@
     border: 1px solid blue;
     width: 50px;
     height: 20px;
+    text-align: center;
     /* flex-basis: 200px; */
     /* flex-grow: 1; */
     /* flex-shrink: 1; */
 
 }
 
-.flex-image {
-    border: blueviolet;
+.profile-image {
+    display: block;
+    margin : 0 auto;
+}
+
+h1 {
+    text-align: center;
 }
