@@ -21,16 +21,17 @@
 
     <!-- Navigation Bar Code -->
     <nav class="navbar">
-        <div class="nav-buttons">
+        
+      <!-- Hamburger Icon for mobile selection-->
+        <div class="hamburger" id = "hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <div class="nav-buttons" id="navMenu">
             <button onclick="loadPage('home')">Home</button>
             <button onclick="loadPage('skills')">Skills</button>
             <button onclick="loadPage('projects')">Projects</button>
             <button onclick="loadPage('about')">About Me</button>
             <button onclick="loadPage('contact')">Contact Me</button>
         </div>
-
-        <!-- Hamburger Icon for mobile selection-->
-         <div class="hamburger" id = "hamburger" onclick="toggleMenu()">&#9776;</div>
 
         <div class="theme-toggle">
           <span class="icon">🌞</span>

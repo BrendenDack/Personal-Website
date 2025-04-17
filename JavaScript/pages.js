@@ -32,3 +32,23 @@ function toggleMenu() {
     const menu = document.querySelector('.nav-buttons');
     menu.classList.toggle('show');
 }
+
+// Close the menu when a nav button is clicked (on mobile)
+document.querySelectorAll('.nav-buttons button').forEach(button => {
+  button.addEventListener('click', () => {
+    const navMenu = document.getElementById('navMenu');
+    // Only close if on mobile (i.e., nav is in dropdown mode)
+    if (window.innerWidth <= 768 && navMenu.classList.contains('show')) {
+      navMenu.classList.remove('show');
+    }
+  });
+});
+
+/* If the windows resizes (Like turning the phone horizontal)
+   close the hamburger menu to prevent goofy looking issues */
+window.addEventListener('resize', () => {
+  const navMenu = document.getElementById('.nav-buttons');
+  if (window.innerWidth > 768) {
+    navMenu.classList.remove('show');
+  }
+});

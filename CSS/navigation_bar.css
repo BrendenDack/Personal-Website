@@ -1,6 +1,12 @@
 .navbar {
-    justify-content: center; /* centers everything */
-    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--nav-background);
 }
 
 nav.navbar {
