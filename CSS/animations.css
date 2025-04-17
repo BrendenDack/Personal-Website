@@ -5,9 +5,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #333, #777);
     z-index: 9999;
     pointer-events: none;
+}
+
+/* Dark mode wipe with Night Sky Gradient + Transparency */
+.dark-mode #wipe {
+    background: linear-gradient(to top, #1a1a1a, #4c4c66, rgba(0, 0, 0, 0)); /* Dark Gray to Cool Light Blue with transparency */
+}
+
+/* Light mode wipe with Sunset Gradient + Transparency */
+.light-mode #wipe {
+    background: linear-gradient(to top, #ff6f00, #ffcc00, rgba(255, 255, 255, 0)); /* Orange to Yellow with transparency */
 }
 
 /* First phase: wipe enters from top */

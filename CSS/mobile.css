@@ -1,0 +1,43 @@
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .nav-buttons {
+        display: none; /* hide nav buttons */
+        flex-direction: column; /* stack buttons */
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-buttons.show {
+        display: flex; /* When hamburger is pressed, show buttons */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on small screen */
+    }
+
+    .nav-buttons button {
+        padding: 10px;
+        border: none;
+        background-color: #444;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .nav-buttons button:hover {
+        background-color: #555;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

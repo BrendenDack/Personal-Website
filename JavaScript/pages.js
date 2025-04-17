@@ -26,3 +26,9 @@ function loadPage(page) {
         });
     }, 400); // Wait for wipe-down to complete before loading
 }
+
+// Function to toggle the navigation menu on small screens
+function toggleMenu() {
+    const menu = document.querySelector('.nav-buttons');
+    menu.classList.toggle('show');
+}

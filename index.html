@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/navigation_bar.css">
     <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
     
     
 </head>
@@ -18,6 +19,7 @@
 
     <!--<img src="cat-551554_1280.jpg" alt="Professional Picture of Brenden Dack" width="245" height="256" class="profile-image"> -->
 
+    <!-- Navigation Bar Code -->
     <nav class="navbar">
         <div class="nav-buttons">
             <button onclick="loadPage('home')">Home</button>
@@ -26,6 +28,10 @@
             <button onclick="loadPage('about')">About Me</button>
             <button onclick="loadPage('contact')">Contact Me</button>
         </div>
+
+        <!-- Hamburger Icon for mobile selection-->
+         <div class="hamburger" id = "hamburger" onclick="toggleMenu()">&#9776;</div>
+
         <div class="theme-toggle">
           <span class="icon">🌞</span>
           <label class="switch">
