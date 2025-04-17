@@ -1,0 +1,38 @@
+.flex-container {
+    display: flex; /* Needed to make into
+    flex container */
+    /* background color */
+    background-color: yellow;
+
+    /* default: horizontal */
+    flex-direction: row;
+
+    /* For Rows */
+    justify-content: center;
+    
+    /* For Columns */
+    align-items: space-evenly;
+
+    /* Allows items to wrap to next line, no shrink */
+    flex-wrap: wrap;
+
+    /* Items srink and won't wrap into next line */
+    /* flex-wrap: nowrap; */
+}
+
+.flex-item {
+    margin: 10px;
+    padding: 10px;
+    background-color: lightblue;
+    border: 1px solid blue;
+    width: 50px;
+    height: 20px;
+    /* flex-basis: 200px; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+
+}
+
+.flex-image {
+    border: blueviolet;
+}
