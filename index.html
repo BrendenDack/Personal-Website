@@ -6,22 +6,49 @@
     <meta name="description" content="Personal website of Brenden Dack">
     <title>Brenden Dack - Personal Website</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/navigation_bar.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    
+    
 </head>
+<div id="wipe"></div>
 <body>
-    <header>
-        <h1>Brenden Dack</h1>
-    </header>
-    <main>
-        <img src="cat-551554_1280.jpg" alt="Professional Picture of Brenden Dack" width="245" height="256" class="profile-image">
-        <div class="flex-container">
-            <div class="flex-item">Home</div>
-            <div class="flex-item">Skills</div>
-            <div class="flex-item">Projects</div>
-            <div class="flex-item">About</div>
-            <div class="flex-item">Contact</div>
-    </main>
+
+    <h1>Brenden Dack</h1>
+
+    <!--<img src="cat-551554_1280.jpg" alt="Professional Picture of Brenden Dack" width="245" height="256" class="profile-image"> -->
+
+    <nav class="navbar">
+        <div class="nav-buttons">
+            <button onclick="loadPage('home')">Home</button>
+            <button onclick="loadPage('skills')">Skills</button>
+            <button onclick="loadPage('projects')">Projects</button>
+            <button onclick="loadPage('about')">About Me</button>
+            <button onclick="loadPage('contact')">Contact Me</button>
+        </div>
+        <div class="theme-toggle">
+          <span class="icon">🌞</span>
+          <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+          </label>
+          <span class="icon">🌙</span>
+        </div>
+    </nav>
+    
+    <div id="content">
+      <h1>Welcome to my website</h1>
+    </div>
+    
+    <script src="JavaScript/dark_mode.js">
+      // Javascript for dark mode stuff
+    </script>
+    <script src="JavaScript/pages.js">
+      // Javascript for loading different pages
+    </script>
+
     <footer>
-        <p>&copy; 2025 Brenden Dack. All rights reserved.</p>
+        <p>&copy; 2025 Brenden Dack</p>
     </footer>
 </body>
 </html>

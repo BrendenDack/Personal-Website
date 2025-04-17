@@ -1,0 +1,136 @@
+body {
+    background-color: #f5f5f5;
+    color: #222;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    justify-content: center; /* centers everything */
+    gap: 40px;
+}
+
+nav.navbar {
+    background: #e0e0e0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    background-color: #ccc;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Theme toggle wrapper */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icons beside the toggle */
+.theme-toggle .icon {
+    font-size: 18px;
+  }
+
+.nav-buttons button {
+    background: #999;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.nav-buttons button:hover {
+    background: #666;
+}
+
+#content {
+    padding: 30px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #eee;
+}
+
+.dark-mode nav.navbar {
+    background: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+.dark-mode .nav-buttons {
+    background-color: #2a2a2a;
+}
+
+.dark-mode .nav-buttons button {
+    background: #444;
+    color: #eee;
+}
+
+.dark-mode .nav-buttons button {
+    background: #444;
+    color: #eee;
+}
+
+.dark-mode .nav-buttons button:hover {
+    background: #666; /* Brighter hover color */
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #888;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
