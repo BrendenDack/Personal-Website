@@ -52,3 +52,8 @@ window.addEventListener('resize', () => {
     navMenu.classList.remove('show');
   }
 });
+
+// Load the home page by default when the site loads
+document.addEventListener("DOMContentLoaded", () => {
+  loadPage("home");
+});
