@@ -1,0 +1,54 @@
+.projects-container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .projects-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .project-card {
+    background-color: var(--accent-color-faded);
+    border: 1px solid var(--accent-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h3 {
+    margin-top: 0;
+  }
+  
+  .project-card p {
+    margin: 0.5rem 0;
+  }
+  
+  .project-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-button:hover {
+    background-color: var(--accent-color-hover);
+  }
+  
+  /* Dark mode override */
+  body.dark-mode .project-card {
+    background-color: var(--accent-color-faded-dark);
+    border-color: var(--accent-color-hover);
+  }
+
+  .button-container {
+    text-align: center;
+    margin-top: 1rem;
+}

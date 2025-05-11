@@ -48,4 +48,8 @@ body.dark-mode {
   .resume-link:hover {
     background-color: var(--accent-color-hover);
   }
-  
+
+  .button-container {
+    text-align: center;
+    margin-top: 1rem;
+}
