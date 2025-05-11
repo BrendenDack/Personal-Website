@@ -1,6 +1,6 @@
 body {
-    background-color: #e5e5e5;
-    color: #222;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
@@ -15,15 +15,16 @@ h1 {
     padding: 30px;
     max-width: 1100px;
     margin: 40px auto;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.95);
+    background-color: var(--container-bg);
     border-radius: 16px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
 }
 
 /* Dark mode version of content box */
 .dark-mode #content {
-    background: rgba(30, 30, 30, 0.85);
+    background: rgba(30, 30, 30, 1);
 }
 
 .home-container {
@@ -85,7 +86,20 @@ body.light-mode {
 }
 
 body.dark-mode {
-    background: linear-gradient(to bottom, #0d0d0d, #2a2a3b, rgba(0, 0, 0, 0.2));
+    background: linear-gradient(to bottom, #0d0d0d, #2f2f4f, rgba(0, 0, 0, 0.2));
     background-attachment: fixed;
     background-size: cover;
 }
+
+.dark-mode {
+    --background-color: #121212; /* Dark background for dark mode */
+    --container-bg: #1f1f1f; /* Darker background for content area */
+    --text-color: #fff;
+}
+
+:root {
+    --background-color: #fff; /* White background for light mode */
+    --container-bg: #fef7e3; /* Soft light background for content area */
+    --text-color: #333;
+}
+

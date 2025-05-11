@@ -1,0 +1,51 @@
+:root {
+    --accent-color: #FF914D;
+    --accent-color-hover: #e6742a;
+    --container-bg: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode {
+    --accent-color: #151248;
+    --accent-color-hover: #040423;
+    --container-bg: rgba(20, 20, 20, 0.85);
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--container-bg);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .about-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .about-container p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .resume-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-color) !important;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .resume-link:hover {
+    background-color: var(--accent-color-hover);
+  }
+  

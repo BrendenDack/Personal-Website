@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/contact.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-    </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </p>
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            
+            <form id="contact-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+          
+              <button type="submit">Send</button>
+            </form>
+          
+            <div class="social-links">
+              <h3>Connect with me:</h3>
+              <a href="https://github.com/BrendenDack" target="_blank">GitHub</a> |
+              <a href="https://www.linkedin.com/in/brendendack/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+
     </main>
     
 </body>
